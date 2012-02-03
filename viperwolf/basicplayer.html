@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Basic Player</title>
+
+	</head>
+<body>
+	
+	
+	
+	<div style="height:100px;width:100%;display:block"> </div>
+	<center>
+		
+	<video id="video" controls>
+		<source src="echo.mp4" />
+	</video>
+	<div id="controls">
+<button id="play" title="play" onclick="playVideo()">Play</button>
+<button id="play" title="play" onclick="pauseVideo()">Pause</button>
+<button id="stop" title="stop" onclick="stopVideo()">Stop</button>
+</div>
+		
+	</center>
+	
+			<script>
+var video = document.getElementsByTagName("video")[0];
+video.controls = false;
+
+var ppbutton = document.getElementById("playpause");
+
+function stopVideo() {
+video.pause();
+video.currentTime = 0;
+}
+/*
+video.addEventListener('play', function() {
+ppbutton.title = "pause";
+ppbutton.innerHTML = "pause";
+}, false);
+video.addEventListener("pause", function() {
+ppbutton.title = "play";
+ppbutton.innerHTML = "play";
+}, false); */
+
+/*
+function togglePlay()
+{
+	
+
+if (video.paused || video.ended) {
+	
+	/*
+if (video.ended)
+{video.currentTime = 0;} */
+/*
+video.play();
+
+}
+else {
+video.pause();
+}
+
+}*/
+
+function playVideo()
+{
+	video.play();
+}
+
+function pauseVideo()
+{
+	video.pause();
+}
+
+</script>
+	
+</body>
+</html>

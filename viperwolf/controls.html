@@ -1,0 +1,124 @@
+<html>
+	<head>
+		<style>
+		
+		#controls{
+			
+			height: auto;
+			width: 600px;
+		}
+			
+			.play {
+	width: 0;
+	height: 0;
+	margin-right: 5px;
+	border-top: 5px solid transparent;
+	border-left: 10px solid black;
+	border-bottom: 5px solid transparent;
+	float: left;
+	padding: 0;
+
+}
+
+.pause
+{
+width: 3px;
+height: 10px;
+margin-right: 5px;
+border-left: 3px solid black;
+border-right: 3px solid black;
+float: left;
+padding: 0;
+
+}
+
+#progressbar
+{
+	width: 100px;
+	height: 6 px;
+	background-color: black;
+	margin: 3px;
+	float: left;
+	
+}
+
+#branding {
+width: 70em;
+height: 10em;
+border: 1px solid;
+position: relative;
+}
+#branding .tel {
+position: absolute;
+left: 10px;
+top: 20px;
+text-align: right;
+}
+
+
+#testdiv
+{
+	height: 100px;
+	border: 1px solid;
+}
+
+
+#hot
+{
+	height:30px;
+	width: 60px;
+	border: 1px solid;
+	margin: 3px;
+	float: left;
+}
+
+#cool
+{
+	height:30px;
+	border: 1px solid;
+	margin: 3px;
+	width: 60px;
+	float: right;
+}
+
+		</style>
+	</head>
+	<body>
+		
+		<div id="controls">
+	<div id="playpause" class="play" onclick="togglePlay();"></div>
+	<div id="progressbar"></div>
+		</div>
+		
+		<br/><br/>
+		<div id="branding">
+<p class="tel">Tel: 0845 838 6163</p>
+</div>
+<br/><br/>
+<div id="testdiv">
+	<div id="hot">hot</div>
+	<div id="cool">cool</div>
+</div>
+		
+		<script>
+			
+			var i=0;
+			playpause = document.getElementById('playpause');
+			function togglePlay()
+			{
+				if(i>0)
+				{
+					i = 0;
+					playpause.className = "pause";
+				}
+				else
+				{
+					i = i+ 1;
+				playpause.className = "play";	
+				}
+				
+			}
+			
+		</script>
+	</body>
+</html>

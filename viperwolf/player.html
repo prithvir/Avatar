@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Landing Page Demo</title>
+		<script src="viperwolf.js"></script>
+<link rel="stylesheet" href="viperwolf.css" />
+	
+	</head>
+	
+<body>
+
+<div style="height:100px;width:100%;display:block"> </div>
+	
+<center>
+	<br/><br/><br/>
+	<video viperwolf="landingpage"  height="315" width="560"  style="-o-object-fit: fill;">
+		<source src="avatar.webm" />
+		<source src="avatar.mp4" />
+		
+	</video>
+
+</center>
+<br/><br/><br/>
+<br/>
+<br/>
+<div  class="pause">
+	<span></span>
+</div>
+	
+	
+</div>	
+	
+	
+		<script>
+			
+			//document .addEventListener ( "DOMContentLoaded" , Viperwolf.loadPlayer('video[viperwolf="true"]'), false );
+			
+			//document .addEventListener ( "DOMContentLoaded" , Viperwolf.loadPlayer('#viper'), false );
+			
+			window.onload = Viperwolf.loadPlayer("video[viperwolf]");
+			
+			
+		</script>
+	
+</body>
+	
+</html>
